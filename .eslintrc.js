@@ -2,7 +2,8 @@ module.exports = {
   // 사전에 정의된 전역 변수 설정
   env: {
     browser: true,
-    node: true
+    node: true,
+    jest: true
   },
   // 사용 가능한 규칙 세트
   extends: [
@@ -12,8 +13,8 @@ module.exports = {
     'eslint:recommended'
   ],
   // 구문 분석할 패키지 설정(Babel, ES6^ => ES5)
-  parserOptions: {
-    parser: 'babel-eslint'
+  parserOptions: {  parser: '@babel/eslint-parser'
+    
   },
   // 추가적인 코드 규칙을 설정
   rules: {
